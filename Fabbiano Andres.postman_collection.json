@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "1a88da6f-2a0e-429b-8d64-a8a19b8a559c",
+		"name": "Fabbiano Andres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24931304"
+	},
+	"item": [
+		{
+			"name": "Obtener productos - paginado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener producto por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"prueba\",\r\n    \"descripcion\" : \"esto es una prueba\",\r\n    \"precio\" : 150.50,\r\n    \"cantidad\" : 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/productos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualziacion de producto por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"actualizacion\",\r\n    \"descripcion\" : \"esto es una actualizacion\",\r\n    \"precio\" : 2600.50,\r\n    \"cantidad\" : 18\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/productos/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar producto por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener productos por nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos/nombres/prueba",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"nombres",
+						"prueba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener productos por precio ascendente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos/precio/ascendente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"precio",
+						"ascendente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener productos por precio descendente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/productos/precio/descendente",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"productos",
+						"precio",
+						"descendente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
